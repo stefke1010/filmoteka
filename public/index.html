@@ -195,3 +195,5 @@
             const newMovie = {
                 title: document.getElementById('title').value,
 genre: document.getElementById('genre').value.toLowerCase(),origin: document.getElementById('origin').value,image: document.getElementById('image').value,description: document.getElementById('description').value};try {const res = await fetch('/api/movies', {method: 'POST',headers: { 'Content-Type': 'application/json' },body: JSON.stringify(newMovie)});if (res.ok) {closeModal();ucitajFilmove();} else {alert('Грешка при чувању.');}} catch (err) {console.error(err);}});// Покрени учитавање филмова чим се страница отвориucitajFilmove();
+
+</script>
